@@ -94,8 +94,8 @@ def extract_watermark(img, size=(64, 64), key=50, bs=8, indx=0, indy=0, fact=8, 
     return wm
 
 if __name__ == "__main__":
-    cover = cv.imread("image2.jpg", cv.IMREAD_GRAYSCALE)
-    watermark = cv.imread("watermark1.jpg", cv.IMREAD_GRAYSCALE)
+    cover = cv.imread("INPUT YOUR IMAGE HERE", cv.IMREAD_GRAYSCALE)
+    watermark = cv.imread("INPUT YOUR WATERMARK HERE", cv.IMREAD_GRAYSCALE)
 
     watermarked = watermark_image(cover, watermark)
     cv.imwrite("Watermarked_Image.jpg", watermarked)
